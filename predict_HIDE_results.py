@@ -18,7 +18,7 @@ def get_args():
 if __name__ == '__main__':
     args = get_args()
     with open('config/config_Stripformer_gopro.yaml') as cfg:
-        config = yaml.load(cfg)
+        config = yaml.safe_load(cfg)
     blur_path = './datasets/HIDE/blur/'
     out_path = './out/Stripformer_HIDE_results'
     if not os.path.isdir(out_path):

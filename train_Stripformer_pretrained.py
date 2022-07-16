@@ -142,7 +142,7 @@ class Trainer:
 
 if __name__ == '__main__':
     with open('config/config_Stripformer_pretrained.yaml', 'r') as f:
-        config = yaml.load(f)
+        config = yaml.safe_load(f)
     # setup
     torch.backends.cudnn.enabled = True
     torch.backends.cudnn.benchmark = True

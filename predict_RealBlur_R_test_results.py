@@ -19,7 +19,7 @@ def get_args():
 if __name__ == '__main__':
     args = get_args()
     with open('config/config_Stripformer_gopro.yaml') as cfg:
-        config = yaml.load(cfg)
+        config = yaml.safe_load(cfg)
     blur_path = './datasets/Realblur_R/test/blur/'
     out_path = './out/Stripformer_realblur_R_results'
     model = get_generator(config['model'])
