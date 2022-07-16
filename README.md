@@ -22,12 +22,14 @@ Download "[GoPro](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR8
 For example: './datasets/GoPro/train/blur/\*\*/\*.png'
 
 **We train our Stripformer in two stages:** </br>
-**1) We pre-train Stripformer for 3000 epochs on patch size 256x256. Please run the following commands.** </br>
+* We pre-train Stripformer for 3000 epochs with patch size 256x256 </br> 
+* Run the following commands 
 ```
 python train_Stripformer_pretrained.py
 ```
 
-**2) After stage 1, we keep training Stripformer for 1000 epochs on patch size 512x512. Please run the following commands.** </br>
+* After 3000 epochs, we keep training Stripformer for 1000 epochs with patch size 512x512 </br>
+* Run the following commands 
 ```
 python train_Stripformer_gopro.py
 ```
@@ -37,19 +39,21 @@ For reproducing our results on GoPro and HIDE dataset, download the "[Stripforme
 
 For reproducing our results on RealBlur dataset, download "[Stripformer_realblur_J.pth](https://drive.google.com/drive/folders/1YcIwqlgWQw_dhy_h0fqZlnKGptq1eVjZ?usp=sharing)" and "[Stripformer_realblur_R.pth](https://drive.google.com/drive/folders/1YcIwqlgWQw_dhy_h0fqZlnKGptq1eVjZ?usp=sharing)"
 
-* For testing on GoPro test set </br>
-Download "[GoPro](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" full dataset or test set into './datasets' </br>
-For example: './datasets/GoPro/test/blur/\*\*/\*.png'
+**For testing on GoPro dataset** </br>
+* Download "[GoPro](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" full dataset or test set into './datasets' (For example: './datasets/GoPro/test/blur/\*\*/\*.png') </br>
+* Run the following commands
 ```
 python predict_GoPro_test_results.py --weights_path ./Stripformer_gopro.pth 
 ```
-* For testing on HIDE dataset </br>
-Download "[HIDE](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" into './datasets' </br>
+**For testing on HIDE dataset** </br>
+* Download "[HIDE](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" into './datasets' </br>
+* Run the following commands
 ```
 python predict_HIDE_results.py --weights_path ./Stripformer_gopro.pth 
 ```
-* For testing on RealBlur test sets
-Download "[RealBlur_J](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" and "[RealBlur_R](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" into './datasets' </br>
+**For testing on RealBlur test sets** </br>
+* Download "[RealBlur_J](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" and "[RealBlur_R](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" into './datasets' </br>
+* Run the following commands
 ```
 python predict_RealBlur_J_test_results.py --weights_path ./Stripformer_realblur_J.pth 
 ```
@@ -57,9 +61,9 @@ python predict_RealBlur_J_test_results.py --weights_path ./Stripformer_realblur_
 python predict_RealBlur_R_test_results.py --weights_path ./Stripformer_realblur_R.pth 
 ```
 
-* For testing your own training weight (take GoPro for a example) 
-1) Rename the path in line 23 in the predict_GoPro_test_results.py </br>
-2) Chage command to --weights_path ./final_Stripformer_gopro.pth
+**For testing your own training weight (take GoPro for a example)** </br>
+* Rename the path in line 23 in the predict_GoPro_test_results.py </br>
+* Chage command to --weights_path ./final_Stripformer_gopro.pth
 
 ## Evaluation
 * For evaluation on GoPro results in MATLAB, download "[Stripformer_GoPro_results](https://drive.google.com/drive/folders/19uXbEEHojEwC29_jL8Gkd1jknc8kiRcR?usp=sharing)" into './out'
