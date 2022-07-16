@@ -32,9 +32,9 @@ python train.py
 ```
 
 ## Testing
-For reproducing our results on GoPro and HIDE dataset, download the "[Stripformer_gopro.pth](https://drive.google.com/file/d/1pqK-L-A2FpFtJtvv2Ef6_vapjH9_IBzV/view?usp=sharing)"
+For reproducing our results on GoPro and HIDE dataset, download the "[Stripformer_gopro.pth](https://drive.google.com/drive/folders/1YcIwqlgWQw_dhy_h0fqZlnKGptq1eVjZ?usp=sharing)"
 
-For reproducing our results on RealBlur dataset, download "[Stripformer_realblur_J.pth](https://drive.google.com/file/d/1n6SRXmv4ZXgLiF5ZcfRdA0HGdvg-tJQk/view?usp=sharing)" and "[Stripformer_realblur_R.pth](https://drive.google.com/file/d/1dtFCNrEK3WFvKHxIOVtichycH89UXh0E/view?usp=sharing)"
+For reproducing our results on RealBlur dataset, download "[Stripformer_realblur_J.pth](https://drive.google.com/drive/folders/1YcIwqlgWQw_dhy_h0fqZlnKGptq1eVjZ?usp=sharing)" and "[Stripformer_realblur_R.pth](https://drive.google.com/drive/folders/1YcIwqlgWQw_dhy_h0fqZlnKGptq1eVjZ?usp=sharing)"
 
 * For testing on GoPro test set </br>
 Download "[GoPro](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" full dataset or test set into './datasets' </br>
