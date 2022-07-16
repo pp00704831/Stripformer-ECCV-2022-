@@ -73,7 +73,7 @@ evaluation_HIDE.m
 ```
 python evaluate_RealBlur_J.py
 ```
-* For evaluation on RealBlur_R results, download "[Stripformer_realblur_R_results](https://drive.google.com/drive/folders/1AlGIJZBsTzH5jdcouHlHIUx_vZgE6EMC?usp=sharing)" into './out'
+* For evaluation on RealBlur_R results, download "[Stripformer_realblur_R_results](https://drive.google.com/drive/folders/19uXbEEHojEwC29_jL8Gkd1jknc8kiRcR?usp=sharing)" into './out'
 ```
 python evaluate_RealBlur_R.py
 ```
