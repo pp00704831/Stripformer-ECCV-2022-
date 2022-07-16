@@ -58,7 +58,7 @@ python predict_RealBlur_R_test_results --weights_path ./Stripformer_realblur_R.p
 
 * For testing your own training weight (take GoPro for a example) 
 1) Rename the path in line 23 in the predict_GoPro_test_results.py </br>
-2) Chage command to --weights_path ./final_Stripformer_gopro.pth when testing
+2) Chage command to --weights_path ./final_Stripformer_gopro.pth
 
 ## Evaluation
 * For evaluation on GoPro results in MATLAB, download "[Stripformer_GoPro_results](https://drive.google.com/drive/folders/19uXbEEHojEwC29_jL8Gkd1jknc8kiRcR?usp=sharing)" into './out'
