@@ -19,7 +19,7 @@ pip install albumentations==1.1.0
 
 ## Training
 Download "[GoPro](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" dataset into './datasets' </br>
-For example: './datasets/GoPro/train/blur/\*\*/\*.png'
+For example: './datasets/GoPro'
 
 **We train our Stripformer in two stages:** </br>
 * We pre-train Stripformer for 3000 epochs with patch size 256x256 </br> 
@@ -40,7 +40,7 @@ For reproducing our results on GoPro and HIDE dataset, download the "[Stripforme
 For reproducing our results on RealBlur dataset, download "[Stripformer_realblur_J.pth](https://drive.google.com/drive/folders/1YcIwqlgWQw_dhy_h0fqZlnKGptq1eVjZ?usp=sharing)" and "[Stripformer_realblur_R.pth](https://drive.google.com/drive/folders/1YcIwqlgWQw_dhy_h0fqZlnKGptq1eVjZ?usp=sharing)"
 
 **For testing on GoPro dataset** </br>
-* Download "[GoPro](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" full dataset or test set into './datasets' (For example: './datasets/GoPro/test/blur/\*\*/\*.png') </br>
+* Download "[GoPro](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" full dataset or test set into './datasets' (For example: './datasets/GoPro/test') </br>
 * Run the following commands
 ```
 python predict_GoPro_test_results.py --weights_path ./Stripformer_gopro.pth 
