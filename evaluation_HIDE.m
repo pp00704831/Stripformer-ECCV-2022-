@@ -1,4 +1,4 @@
-p = genpath('.\out\Stripformer_HIDE_result');% HIDE Deblur Results
+p = genpath('.\out\Stripformer_HIDE_results');% HIDE Deblur Results
 gt = genpath('.\datasets\HIDE\sharp');% HIDE GT Results
 
 length_p = size(p,2);

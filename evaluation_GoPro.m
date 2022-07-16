@@ -1,4 +1,4 @@
-p = genpath('.\out\stripformer_10_patches');% GoPro Deblur Results
+p = genpath('.\out\Stripformer_GoPro_results');% GoPro Deblur Results
 gt = genpath('.\datasets\GoPro\test\sharp');% GoPro GT Results 
 
 length_p = size(p,2);
