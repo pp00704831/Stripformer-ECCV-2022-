@@ -40,20 +40,20 @@ For reproducing our results on RealBlur dataset, download "[Stripformer_realblur
 Download "[GoPro](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" full dataset or test set into './datasets' </br>
 For example: './datasets/GoPro/test/blur/\*\*/\*.png'
 ```
-python predict_GoPro_test_results --weights_path ./Stripformer_gopro.pth 
+python predict_GoPro_test_results.py --weights_path ./Stripformer_gopro.pth 
 ```
 * For testing on HIDE dataset </br>
 Download "[HIDE](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" into './datasets' </br>
 ```
-python predict_HIDE_results --weights_path ./Stripformer_gopro.pth 
+python predict_HIDE_results.py --weights_path ./Stripformer_gopro.pth 
 ```
 * For testing on RealBlur test sets
 Download "[RealBlur_J](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" and "[RealBlur_R](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" into './datasets' </br>
 ```
-python predict_RealBlur_J_test_results --weights_path ./Stripformer_realblur_J.pth 
+python predict_RealBlur_J_test_results.py --weights_path ./Stripformer_realblur_J.pth 
 ```
 ```
-python predict_RealBlur_R_test_results --weights_path ./Stripformer_realblur_R.pth 
+python predict_RealBlur_R_test_results.py --weights_path ./Stripformer_realblur_R.pth 
 ```
 
 * For testing your own training weight (take GoPro for a example) 
