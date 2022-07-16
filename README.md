@@ -1,7 +1,7 @@
 # Stripformer: Strip Transformer for Fast Image Deblurring (ECCV 2022 Oral)
 Pytorch Implementation of "[Stripformer: Strip Transformer for Fast Image Deblurring](https://arxiv.org/abs/2204.04627)"
 
-<img src="./Figure/Intra_Inter.PNG" width = "1000" height = "250" div align=center />
+<img src="./Figure/Intra_Inter.PNG" width = "800" height = "200" div align=center />
 
 ## Installation
 The implementation of our BANet is modified from "[DeblurGANv2](https://github.com/VITA-Group/DeblurGANv2)"
