@@ -1,0 +1,40 @@
+---
+experiment_desc: Stripformer_pretrained
+
+train:
+  files_a: ./datasets/GoPro/train/blur/**/*.png
+  files_b: ./datasets/GoPro/train/sharp/**/*.png
+  size: &SIZE 256
+  crop: random
+  preload: &PRELOAD false
+  preload_size: &PRELOAD_SIZE 0
+  bounds: [0, 1]
+  scope: geometric
+
+val:
+  files_a: ./datasets/GoPro/test/blur/**/*.png
+  files_b: ./datasets/GoPro/test/sharp/**/*.png
+  size: *SIZE
+  scope: None
+  crop: random
+  preload: *PRELOAD
+  preload_size: *PRELOAD_SIZE
+  bounds: [0, 1]
+
+model:
+  g_name: Stripformer
+  content_loss: Stripformer_Loss
+
+num_epochs: 3000
+train_batches_per_epoch: 2103
+val_batches_per_epoch: 1111
+batch_size: 8
+image_size: [256, 256]
+
+optimizer:
+  name: adam
+  lr: 0.0001
+scheduler:
+  name: cosine
+  start_epoch: 50
+  min_lr: 0.0000001
