@@ -24,12 +24,12 @@ For example: './datasets/GoPro/train/blur/\*\*/\*.png'
 **We train our Stripformer in two stages:** </br>
 **1) We pre-train Stripformer for 3000 epochs on patch size 256x256. Please run the following commands.** </br>
 ```
-python pretrained.py
+python train_Stripformer_pretrained.py
 ```
 
 **2) After stage 1, we keep training Stripformer for 1000 epochs on patch size 512x512. Please run the following commands.** </br>
 ```
-python train.py
+python train_Stripformer_gopro.py
 ```
 
 ## Testing
