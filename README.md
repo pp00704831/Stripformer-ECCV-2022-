@@ -4,7 +4,7 @@ Pytorch Implementation of "[Stripformer: Strip Transformer for Fast Image Deblur
 <img src="./Figure/Intra_Inter.PNG" width = "800" height = "200" div align=center />
 
 ## Installation
-The implementation of our BANet is modified from "[DeblurGANv2](https://github.com/VITA-Group/DeblurGANv2)"
+The implementation is modified from "[DeblurGANv2](https://github.com/VITA-Group/DeblurGANv2)"
 ```
 git clone https://github.com/pp00704831/Stripformer.git
 cd Stripformer
