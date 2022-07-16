@@ -23,13 +23,13 @@ For example: './datasets/GoPro'
 
 **We train our Stripformer in two stages:** </br>
 * We pre-train Stripformer for 3000 epochs with patch size 256x256 </br> 
-* Run the following commands 
+* Run the following command 
 ```
 python train_Stripformer_pretrained.py
 ```
 
 * After 3000 epochs, we keep training Stripformer for 1000 epochs with patch size 512x512 </br>
-* Run the following commands 
+* Run the following command 
 ```
 python train_Stripformer_gopro.py
 ```
@@ -41,19 +41,19 @@ For reproducing our results on RealBlur dataset, download "[Stripformer_realblur
 
 **For testing on GoPro dataset** </br>
 * Download "[GoPro](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" full dataset or test set into './datasets' (For example: './datasets/GoPro/test') </br>
-* Run the following commands
+* Run the following command
 ```
 python predict_GoPro_test_results.py --weights_path ./Stripformer_gopro.pth 
 ```
 **For testing on HIDE dataset** </br>
 * Download "[HIDE](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" into './datasets' </br>
-* Run the following commands
+* Run the following command
 ```
 python predict_HIDE_results.py --weights_path ./Stripformer_gopro.pth 
 ```
 **For testing on RealBlur test sets** </br>
 * Download "[RealBlur_J](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" and "[RealBlur_R](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" into './datasets' </br>
-* Run the following commands
+* Run the following command
 ```
 python predict_RealBlur_J_test_results.py --weights_path ./Stripformer_realblur_J.pth 
 ```
