@@ -17,7 +17,7 @@ pip install -U albumentations[imgaug]
 
 
 ## Training
-Download "[GoPro](https://drive.google.com/drive/folders/1AlGIJZBsTzH5jdcouHlHIUx_vZgE6EMC?usp=sharing)" dataset into './datasets' </br>
+Download "[GoPro](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" dataset into './datasets' </br>
 For example: './datasets/GoPro/train/blur/\*\*/\*.png'
 
 **We train our Stripformer in two stages:** </br>
@@ -37,18 +37,18 @@ For reproducing our results on GoPro and HIDE dataset, download the "[Stripforme
 For reproducing our results on RealBlur dataset, download "[Stripformer_realblur_J.pth](https://drive.google.com/file/d/1n6SRXmv4ZXgLiF5ZcfRdA0HGdvg-tJQk/view?usp=sharing)" and "[Stripformer_realblur_R.pth](https://drive.google.com/file/d/1dtFCNrEK3WFvKHxIOVtichycH89UXh0E/view?usp=sharing)"
 
 * For testing on GoPro test set </br>
-Download "[GoPro](https://drive.google.com/drive/folders/1AlGIJZBsTzH5jdcouHlHIUx_vZgE6EMC?usp=sharing)" full dataset or test set into './datasets' </br>
+Download "[GoPro](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" full dataset or test set into './datasets' </br>
 For example: './datasets/GoPro/test/blur/\*\*/\*.png'
 ```
 python predict_GoPro_test_results --weights_path ./Stripformer_gopro.pth 
 ```
 * For testing on HIDE dataset </br>
-Download "[HIDE](https://drive.google.com/drive/folders/1AlGIJZBsTzH5jdcouHlHIUx_vZgE6EMC?usp=sharing)" into './datasets' </br>
+Download "[HIDE](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" into './datasets' </br>
 ```
 python predict_HIDE_results --weights_path ./Stripformer_gopro.pth 
 ```
 * For testing on RealBlur test sets
-Download "[RealBlur_J](https://drive.google.com/drive/folders/1AlGIJZBsTzH5jdcouHlHIUx_vZgE6EMC?usp=sharing)" and "[RealBlur_R](https://drive.google.com/drive/folders/1AlGIJZBsTzH5jdcouHlHIUx_vZgE6EMC?usp=sharing)" into './datasets' </br>
+Download "[RealBlur_J](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" and "[RealBlur_R](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" into './datasets' </br>
 ```
 python predict_RealBlur_J_test_results --weights_path ./Stripformer_realblur_J.pth 
 ```
@@ -61,15 +61,15 @@ python predict_RealBlur_R_test_results --weights_path ./Stripformer_realblur_R.p
 2) Chage command to --weights_path ./final_Stripformer_gopro.pth when testing
 
 ## Evaluation
-* For evaluation on GoPro results in MATLAB, download "[Stripformer_GoPro_results](https://drive.google.com/drive/folders/1AlGIJZBsTzH5jdcouHlHIUx_vZgE6EMC?usp=sharing)" into './out'
+* For evaluation on GoPro results in MATLAB, download "[Stripformer_GoPro_results](https://drive.google.com/drive/folders/19uXbEEHojEwC29_jL8Gkd1jknc8kiRcR?usp=sharing)" into './out'
 ```
 evaluation_GoPro.m
 ```
-* For evaluation on HIDE results in MATLAB, download "[Stripformer_HIDE_results](https://drive.google.com/drive/folders/1AlGIJZBsTzH5jdcouHlHIUx_vZgE6EMC?usp=sharing)" into './out'
+* For evaluation on HIDE results in MATLAB, download "[Stripformer_HIDE_results](https://drive.google.com/drive/folders/19uXbEEHojEwC29_jL8Gkd1jknc8kiRcR?usp=sharing)" into './out'
 ```
 evaluation_HIDE.m
 ```
-* For evaluation on RealBlur_J results, download "[Stripformer_realblur_J_results](https://drive.google.com/drive/folders/1AlGIJZBsTzH5jdcouHlHIUx_vZgE6EMC?usp=sharing)" into './out'
+* For evaluation on RealBlur_J results, download "[Stripformer_realblur_J_results](https://drive.google.com/drive/folders/19uXbEEHojEwC29_jL8Gkd1jknc8kiRcR?usp=sharing)" into './out'
 ```
 python evaluate_RealBlur_J.py
 ```
