@@ -1,4 +1,4 @@
-# Stripformer (ECCV 2022)
+# Stripformer (ECCV 2022 Oral)
 Pytorch Implementation of "[Stripformer: Strip Transformer for Fast Image Deblurring](https://arxiv.org/abs/2204.04627)" (ECCV 2022 Oral)
 
 <img src="./Figure/Intra_Inter.PNG" width = "800" height = "200" div align=center />
