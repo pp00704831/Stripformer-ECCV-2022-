@@ -18,7 +18,7 @@ pip install albumentations==1.1.0
 
 
 ## Training
-Download "[GoPro](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" dataset into './datasets' </br>
+Download "[GoPro](https://drive.google.com/drive/folders/1bEZO-l6sI9NXMRd98ldi74kCGAnw4bLQ?usp=drive_link)" dataset into './datasets' </br>
 For example: './datasets/GoPro'
 
 **We train our Stripformer in two stages:** </br>
@@ -35,24 +35,24 @@ python train_Stripformer_gopro.py
 ```
 
 ## Testing
-For reproducing our results on GoPro and HIDE datasets, download "[Stripformer_gopro.pth](https://drive.google.com/drive/folders/1YcIwqlgWQw_dhy_h0fqZlnKGptq1eVjZ?usp=sharing)"
+For reproducing our results on GoPro and HIDE datasets, download "[Stripformer_gopro.pth](https://drive.google.com/drive/folders/18kx_JTj8SzsQk0Wxnkn5_gg_d_iK_LKZ?usp=drive_link)"
 
-For reproducing our results on RealBlur dataset, download "[Stripformer_realblur_J.pth](https://drive.google.com/drive/folders/1YcIwqlgWQw_dhy_h0fqZlnKGptq1eVjZ?usp=sharing)" and "[Stripformer_realblur_R.pth](https://drive.google.com/drive/folders/1YcIwqlgWQw_dhy_h0fqZlnKGptq1eVjZ?usp=sharing)"
+For reproducing our results on RealBlur dataset, download "[Stripformer_realblur_J.pth](https://drive.google.com/drive/folders/18kx_JTj8SzsQk0Wxnkn5_gg_d_iK_LKZ?usp=drive_link)" and "[Stripformer_realblur_R.pth](https://drive.google.com/drive/folders/18kx_JTj8SzsQk0Wxnkn5_gg_d_iK_LKZ?usp=drive_link)"
 
 **For testing on GoPro dataset** </br>
-* Download "[GoPro](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" full dataset or test set into './datasets' (For example: './datasets/GoPro/test') </br>
+* Download "[GoPro](https://drive.google.com/drive/folders/1bEZO-l6sI9NXMRd98ldi74kCGAnw4bLQ?usp=drive_link)" full dataset or test set into './datasets' (For example: './datasets/GoPro/test') </br>
 * Run the following command
 ```
 python predict_GoPro_test_results.py --weights_path ./Stripformer_gopro.pth 
 ```
 **For testing on HIDE dataset** </br>
-* Download "[HIDE](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" into './datasets' </br>
+* Download "[HIDE](https://drive.google.com/drive/folders/1bEZO-l6sI9NXMRd98ldi74kCGAnw4bLQ?usp=drive_link)" into './datasets' </br>
 * Run the following command
 ```
 python predict_HIDE_results.py --weights_path ./Stripformer_gopro.pth 
 ```
 **For testing on RealBlur test sets** </br>
-* Download "[RealBlur_J](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" and "[RealBlur_R](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" into './datasets' </br>
+* Download "[RealBlur_J](https://drive.google.com/drive/folders/1bEZO-l6sI9NXMRd98ldi74kCGAnw4bLQ?usp=drive_link)" and "[RealBlur_R](https://drive.google.com/drive/folders/1bEZO-l6sI9NXMRd98ldi74kCGAnw4bLQ?usp=drive_link)" into './datasets' </br>
 * Run the following command
 ```
 python predict_RealBlur_J_test_results.py --weights_path ./Stripformer_realblur_J.pth 
@@ -66,19 +66,19 @@ python predict_RealBlur_R_test_results.py --weights_path ./Stripformer_realblur_
 * Chage command to --weights_path ./final_Stripformer_gopro.pth
 
 ## Evaluation
-* For evaluation on GoPro results in MATLAB, download "[Stripformer_GoPro_results](https://drive.google.com/drive/folders/19uXbEEHojEwC29_jL8Gkd1jknc8kiRcR?usp=sharing)" into './out'
+* For evaluation on GoPro results in MATLAB, download "[Stripformer_GoPro_results](https://drive.google.com/drive/folders/1qrwjvysFFrujLzDB5cfTuZfD5KbefOJX?usp=drive_link)" into './out'
 ```
 evaluation_GoPro.m
 ```
-* For evaluation on HIDE results in MATLAB, download "[Stripformer_HIDE_results](https://drive.google.com/drive/folders/19uXbEEHojEwC29_jL8Gkd1jknc8kiRcR?usp=sharing)" into './out'
+* For evaluation on HIDE results in MATLAB, download "[Stripformer_HIDE_results](https://drive.google.com/drive/folders/1qrwjvysFFrujLzDB5cfTuZfD5KbefOJX?usp=drive_link)" into './out'
 ```
 evaluation_HIDE.m
 ```
-* For evaluation on RealBlur_J results, download "[Stripformer_realblur_J_results](https://drive.google.com/drive/folders/19uXbEEHojEwC29_jL8Gkd1jknc8kiRcR?usp=sharing)" into './out'
+* For evaluation on RealBlur_J results, download "[Stripformer_realblur_J_results](https://drive.google.com/drive/folders/1qrwjvysFFrujLzDB5cfTuZfD5KbefOJX?usp=drive_link)" into './out'
 ```
 python evaluate_RealBlur_J.py
 ```
-* For evaluation on RealBlur_R results, download "[Stripformer_realblur_R_results](https://drive.google.com/drive/folders/19uXbEEHojEwC29_jL8Gkd1jknc8kiRcR?usp=sharing)" into './out'
+* For evaluation on RealBlur_R results, download "[Stripformer_realblur_R_results](https://drive.google.com/drive/folders/1qrwjvysFFrujLzDB5cfTuZfD5KbefOJX?usp=drive_link)" into './out'
 ```
 python evaluate_RealBlur_R.py
 ```
