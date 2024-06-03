@@ -1,10 +1,15 @@
+# News
+* Our new paper "[ID-Blau: Image Deblurring by Implicit Diffusion-based reBLurring AUgmentation
+](https://github.com/plusgood-steven/ID-Blau?tab=readme-ov-file)" (CVPR 2024) is avalable. </br>
+ID-Blau significantly boosts Stripformer on the RealBlur-J dataset to achieve new state-of-the-art result (33.77dB).
+
 # Stripformer (ECCV 2022 Oral)
 Pytorch Implementation of "[Stripformer: Strip Transformer for Fast Image Deblurring](https://arxiv.org/abs/2204.04627)" (ECCV 2022 Oral)
 
 <img src="./Figure/Intra_Inter.PNG" width = "800" height = "200" div align=center />
 
 ## Installation
-The implementation is modified from "[DeblurGANv2](https://github.com/VITA-Group/DeblurGANv2)"
+The implementation is modified from "[DeblurGANv2](https://github.com/VITA-Group/DeblurGANv2)". 
 ```
 git clone https://github.com/pp00704831/Stripformer.git
 cd Stripformer
