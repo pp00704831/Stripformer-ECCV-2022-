@@ -1,6 +1,6 @@
 # News
-* Our new paper "[ID-Blau: Image Deblurring by Implicit Diffusion-based reBLurring AUgmentation
-](https://github.com/plusgood-steven/ID-Blau?tab=readme-ov-file)" (CVPR 2024) is avalable. </br>
+* Our new paper [ID-Blau: Image Deblurring by Implicit Diffusion-based reBLurring AUgmentation](https://github.com/plusgood-steven/ID-Blau?tab=readme-ov-file) (CVPR 2024) is avalable. </br>
+* Our new paper [Domain-adaptive Video Deblurring via Test-time Blurring](https://github.com/Jin-Ting-He/DADeblur) (ECCV 2024) is avalable. </br>
 
 # Stripformer (ECCV 2022 Oral)
 Pytorch Implementation of "[Stripformer: Strip Transformer for Fast Image Deblurring](https://arxiv.org/abs/2204.04627)" (ECCV 2022 Oral)
